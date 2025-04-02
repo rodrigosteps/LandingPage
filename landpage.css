@@ -38,18 +38,25 @@ body{
 }
 
 /*main text */
+.banner{
+    gap: 0;
+}
+
 .letters{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    padding-left: 3em;
+    margin: 0 auto;
+    width:80%;
+    gap: 0px;
 }
 
 h1{
-    grid-column: span 2 / span 2;
+    grid-column: span 2 / span 1;
     font-size: 8em;
-    padding-left: 1em;
+    padding:1em 0 0 1em;
     font-weight:360;
+    width: 5.5em;
 }
 
 h2{
@@ -57,57 +64,71 @@ h2{
     grid-column-start: 2;
     grid-row-start: 2;
     font-size: 8em;
+    padding:0;
     font-weight:360;
+    width: 5.5em;
 }
 
 .banner p{
-
     font-size: 1.3em;
     text-align: left;
-    padding-top: 3em;
+    padding-top: 10em;
     margin-left: 1em;
-
+    width: 90%; 
+    height: 40%;
 }
 
 /*main images */
+.maincontent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
 .workers img {
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid rgb(255, 255, 255);
     padding: 5px;
 }
-#worker1,
-#worker2,
-#worker0{ 
+.workerimg{ 
+
     max-width: auto; 
-    max-height: 250px; 
+    max-height: 240px; 
     
 }
 #worker0{
-    zoom: 118%;
+    zoom: 126%;
 }
 .workers{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-grow: 10;
-    justify-content: center;
-    padding: 8em 0 4em 0;
+    justify-content:center;
+    flex-grow: 1;
+    align-items: center;
+    margin-bottom: 4%;
 }
 .info{
+    font-size: 2em;
     font-weight: 400;
     text-align:start;
     padding: 8px;
 }
 
-footer{
+.info p {
+    padding: 10% 0;
+    font-size: 20px;
+    margin: 0;
+    height: 10px;
+
+}
+
+.footer{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1em 10em;
-    text-align: start;
-    width: auto;
-    margin: 0 4em 0 4em;
+    justify-content: center;
+    padding: 0 0px;
+    margin: 8% 0 4% 0;
 }
 button{
     display: flex;
@@ -132,13 +153,17 @@ button{
     justify-content: center;
     align-items: center;
     gap: 2em;
-    padding: 1em ;
-    margin-left: 30em;
+    padding: 0 0 0 12em ;
+    margin-left: 0;
 }
 
 /*responsividade para telas menores*/
 @media screen and  (min-width:360px) and (max-width: 800px)  {
-.navigation {
+body{
+
+
+}
+    .navigation {
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -160,8 +185,10 @@ margin: 0 ;
 
 .banner p {
     font-size: 200%;
-    padding: 4px 0 0 0;
-    margin: 8px 0 0 0 ;
+    padding: 4px 4px 0 0;
+    margin: 50% 0 0 0 ;
+    width: 180%;
+    height: 10%;
    
 }
 
@@ -170,8 +197,8 @@ margin: 0 ;
     flex-direction:row;
     flex-wrap: wrap;
     align-items: center;
-    width:100vw;
-    padding: 40px 0px 0px 20px ;
+    width:100%;
+    padding: 0 ;
 }
 
 .workers img{
@@ -183,9 +210,26 @@ margin: 0 ;
     padding: 8px;
 }
 
+.info{
+    padding: 10% 0;
+    font-size: 0.1em;
+    margin: 0 20% 0 1%;
+    height: 2px;
+}
+
+.info p{
+    padding: 10% 0;
+    font-size: 0.1em;
+    margin: 0;
+    height: 2px;
+}
 .footer{
-    padding: 0 100px;
-    margin: 8% 0 0 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 0px;
+    margin: 8% 0 4% 0;
+    
+    
 }
 
 .plataforms{
