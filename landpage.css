@@ -205,11 +205,11 @@ button {
   }
 
   .workers img {
-    width: 100px;
+    width: 140px;
   }
 
   .workers h3 {
-    font-size: 200%;
+    font-size: 300%;
     padding: 8px;
   }
 
@@ -222,7 +222,7 @@ button {
 
   .info p {
     padding: 10% 0;
-    font-size: 0.1em;
+    font-size: 0.9em;
     margin: 0;
     height: 2px;
   }
