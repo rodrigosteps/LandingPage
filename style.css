@@ -1,3 +1,10 @@
+/*general variable */
+:root {
+  --BKGCOLOR: radial-gradient(circle at bottom, #3506b6 -95%, #04000d 98%);
+  --SITEFONT: #ffffff;
+  --font: "roboto", sans-serif;
+}
+
 /*general style */
 * {
   margin: 0;
@@ -5,27 +12,25 @@
   text-decoration: none;
   box-sizing: border-box;
   scrollbar-width: smooth;
+  color: var(--SITEFONT);
+  font-family: var(--font);
 }
-/*general variable */
-:root {
-  --BKGCOLOR: radial-gradient(circle at bottom, #3506b6 -95%, #04000d 98%);
-  --SITEFONT: #ffffff;
-  --font: "roboto", sans-serif;
-}
+
 /* body style*/
 body {
   background-image:url(/LandingPage/ASSETS/bkg.png) ;
-  background-size:cover;
-  background-position: center;
-  color: var(--SITEFONT);
-  font-family: var(--font);
+  background-size: cover;
+  resize: both;
+  overflow: scroll;
+  background-position:center;
+
 }
 
 /*navigation style */
 .icon {
   display: flex;
   flex-direction: row;
-  margin: 2em 0 0 4em;
+  margin: 1em 0 0 4em;
 }
 
 .links {
@@ -34,7 +39,9 @@ body {
   text-align: start;
   align-items: center;
   justify-content: right;
-  margin: 0 2% 0 70%;
+  font-size: 1.4em;
+  margin-left: 46em;
+  margin-top: 1em;
   gap: 1em;
 }
 
@@ -55,7 +62,7 @@ body {
 h1 {
   grid-column: span 2 / span 1;
   font-size: 8em;
-  padding: 1em 0 0 1em;
+  padding: 0.5em 0 0 1em;
   font-weight: 360;
   width: 5.5em;
 }
@@ -73,7 +80,7 @@ h2 {
 .banner p {
   font-size: 1.3em;
   text-align: left;
-  padding-top: 10em;
+  padding-top: 6em;
   margin-left: 1em;
   width: 90%;
   height: 40%;
@@ -106,7 +113,6 @@ h2 {
   justify-content: center;
   flex-grow: 1;
   align-items: center;
-  margin-bottom: 4%;
 }
 .info {
   font-size: 2em;
@@ -134,6 +140,7 @@ button {
   align-items: center;
   padding: 1em 1.5em;
   background-color: #ffffff;
+  color: #000;
   border-style: none;
   font-weight: 700;
   font-size: 14px;
