@@ -93,12 +93,7 @@ h2 {
   flex-wrap: wrap;
   text-align: center;
 }
-.workers img {
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid rgb(255, 255, 255);
-  padding: 5px;
-}
+
 .workerimg {
   max-width: auto;
   max-height: 240px;
