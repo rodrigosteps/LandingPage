@@ -36,11 +36,12 @@ body {
 .links {
   display: flex;
   flex-direction: row;
-  text-align: start;
+  flex-wrap: nowrap;
+  width: 100px;
   align-items: center;
-  justify-content: right;
+  justify-content: space-between;
   font-size: 1.4em;
-  margin-left: 46em;
+  padding-left: 34em;
   margin-top: 1em;
   gap: 1em;
 }
@@ -160,13 +161,16 @@ button {
 /*responsividade para telas menores*/
 @media screen and (min-width: 340px) and (max-width: 700px) {
 
-
+html{
+width: 300px;
+}
   .navigation{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    width: 1%;
   }
 
   .links{
