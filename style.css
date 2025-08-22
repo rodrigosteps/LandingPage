@@ -21,7 +21,6 @@ body {
   background-image:url(/LandingPage/ASSETS/bkg.png) ;
   background-size: cover;
   resize: both;
-
   background-position:center;
 
 }
@@ -29,8 +28,10 @@ body {
 /*navigation style */
 .navigation{
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20em;
+  margin-top: 1em;
 }
 .icon {
   display: flex;
@@ -45,8 +46,8 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.4em;
-  margin-left: 34em;
-  margin-top: 1em;
+
+
   gap: 1em;
 }
 
@@ -97,6 +98,7 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
+  margin: 0 4em;
 }
 
 .workerimg {
@@ -131,9 +133,10 @@ h2 {
 .footer {
   display: flex;
   justify-content: center;
-  padding: 0 0px;
+  justify-content: space-evenly;
   margin: 8% 0 4% 0;
 }
+
 button {
   display: flex;
   justify-content: center;
@@ -151,15 +154,24 @@ button {
   align-items: center;
   padding-left: 1em;
 }
-
+.plataforms img{
+  margin: 0.5em;
+}
 .plataforms {
+display:inline-flex;
+flex-direction: row;
+align-items: center;
+flex-wrap: nowrap;
+word-break: none;
+gap: 2em;
+
+p{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
-  padding: 0 0 0 12em;
-  margin-left: 0;
+flex-direction: row;
+align-items: center;
+flex-wrap: nowrap;
+width: 12em;
+}
 }
 
 /*responsividade para telas menores*/
