@@ -18,15 +18,14 @@
 
 /* body style*/
 body {
-  background-image:url(/LandingPage/ASSETS/bkg.png) ;
+  background-image: url(/LandingPage/ASSETS/bkg.png);
   background-size: cover;
   resize: both;
-  background-position:center;
-
+  background-position: center;
 }
 
 /*navigation style */
-.navigation{
+.navigation {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -46,7 +45,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.4em;
-
 
   gap: 1em;
 }
@@ -142,7 +140,7 @@ button {
   justify-content: center;
   align-items: center;
   padding: 1em 1.5em;
-  background-color: #ffffff;
+  background-color: #fafafa;
   color: #000;
   border-style: none;
   font-weight: 700;
@@ -154,116 +152,117 @@ button {
   align-items: center;
   padding-left: 1em;
 }
-.plataforms img{
+.plataforms img {
   margin: 0.5em;
 }
 .plataforms {
-display:inline-flex;
-flex-direction: row;
-align-items: center;
-flex-wrap: nowrap;
-word-break: none;
-gap: 2em;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  word-break: none;
+  gap: 2em;
 
-p{
-  display: flex;
-flex-direction: row;
-align-items: center;
-flex-wrap: nowrap;
-width: 12em;
-}
+  p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 12em;
+  }
 }
 
 /*responsividade para telas menores*/
-@media screen and (min-width: 340px) and (max-width: 700px) {
-
-html{
-width: 300px;
-}
-  .navigation{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 1%;
-  }
-
-  .links{
-    font-size: 80%;
-    padding: 0 0 0 8em;
-  }
-
-  .icon{
-    margin: 2% 4%; 
+@media screen and (max-width: 700px) {
+  html {
     padding: 0;
-    width: 10%;
+    margin: 0;
   }
 
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1em;
+    gap: 0;
+
+    .icon {
+      margin: 1em 0;
+    }
+    .links {
+      font-size: 1.2em;
+    }
+  }
   .banner {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: start;
-    font-size: 26%;
-    padding: 50px 0 20px 0;
-    margin: 0;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .banner p {
-    font-size: 200%;
-    padding: 4px 4px 0 0;
-    margin: 50% 0 0 0;
-    width: 180%;
-    height: 10%;
+  .letters {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.5em;
+    width: 100%;
+
+    h1,
+    h2 {
+      padding: 0;
+      width: 100%;
+    }
+    p {
+      padding: 0 2em;
+      font-size: 2em;
+      text-align: center;
+      margin: 1em 0 0 0;
+      width: 100%;
+    }
   }
 
-  .workers {
+  .maincontent img {
+    width: 60%;
+    margin-bottom: 1em;
+    object-fit: contain;
+  }
+  .maincontent {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    padding: 0;
+    margin: 2em 0 0 0;
+
+    .workers {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin: 1em 0 0 0;
+
+      #worker0 {
+        width: 70%;
+      }
+
+      #if {
+        font-size: 1.9em;
+        padding: 0 1em;
+      }
+      p {
+        width: 100%;
+        margin-bottom: 2em;
+        padding: 0;
+      }
+    }
   }
 
-  .workers img {
-    width: 140px;
-  }
-
-  .workers h3 {
-    font-size: 300%;
-    padding: 8px;
-  }
-
-  .info {
-    padding: 10% 0;
-    font-size: 0.1em;
-    margin: 0 20% 0 1%;
-    height: 2px;
-  }
-
-  .info p {
-    padding: 10% 0;
-    font-size: 0.9em;
-    margin: 0;
-    height: 2px;
-  }
   .footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 0 10%;
-    margin: 8% 0 4% 0;
-  }
-
-  .plataforms {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    font-size: 80%;
-    padding: 1%;
-    margin: 0 0 0 0;
+    padding: 0;
+
+    .plataforms {
+      flex-direction: column;
+      padding: 0;
+      gap: 0;
+      margin-top: 1em;
+    }
   }
 }
