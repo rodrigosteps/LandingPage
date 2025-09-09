@@ -18,11 +18,9 @@
 
 /* body style*/
 body {
-  background-image: url(/LandingPage/ASSETS/bkg.png);
-  background-size: cover;
-  resize: both;
-  background-position: center;
-}
+
+background: #463ea3;
+background: radial-gradient(circle,rgb(12, 4, 101) 1%, rgba(21, 5, 74, 1) 39%, rgba(0, 0, 0, 1) 69%);}
 
 /*navigation style */
 .navigation {
@@ -128,11 +126,66 @@ h2 {
   height: 10px;
 }
 
+.courses {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  height: 400px;
+  margin: 4em auto;
+  background-color: none;
+
+  h1 {
+    font-size: 6em;
+    width: 100%;
+    margin-top: 0.5em;
+    padding: 0;
+      font-weight: 360;
+  }
+}
+.coursepanel img {
+  width: 120px;
+}
+.coursepanel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1em;
+  
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 2em;
+    margin: 2em 0;
+    border: 1px solid;
+    border-radius: 24px;
+    border-bottom-color: #3506b6;
+    border-right-color: #3d04db;
+    border-top-color: #241151;
+    border-left-color: #241151;
+    background-color: rgb(0, 20, 20, 80%);
+
+    span {
+      font-size: 1.5em;
+      margin-bottom: 0.8em;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 0.9em;
+      padding: 0;
+    }
+  }
+}
+
 .footer {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
-  margin: 8% 0 4% 0;
+  margin: 20% 0 4% 0;
 }
 
 button {
@@ -249,7 +302,14 @@ button {
         padding: 0;
       }
     }
+
   }
+
+.courses{
+  display: none;
+}
+
+
 
   .footer {
     display: flex;
