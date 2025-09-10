@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-   
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <title>LANDING PAGE</title>
 </head>
+
 <body>
-<!-- navigation of the site-->
+    <!-- svg: first layer -->
+
+    <!-- navigation of the site-->
     <!-- logo-->
 
     <nav class="navigation" id="div">
@@ -20,56 +26,100 @@
         </div>
         <!-- links-->
         <div class="links" id="links">
-            <a>  Courses </a>
-            <a>  Curators</a>
-            <a>  Story</a>
+            <a> Courses </a>
+            <a> Curators</a>
+            <a> Story</a>
             <a> Let's talk</a>
         </div>
     </nav>
     <!-- main content-->
-        <main class="banner">
-            <div  class=" letters" id="letters">
-                <h1> Gain new </h1>
-                <h2>digital skills</h2>
-                <p id="banner-p"> Hundreds of courses to help you starts your first company. </p>
+    <main class="banner">
+        <div class=" letters" id="letters">
+            <h1> Gain new </h1>
+            <h2>digital skills</h2>
+            <p id="banner-p"> Hundreds of courses to help you starts your first company. </p>
+        </div>
+        <!-- images in main content-->
+        <div class="maincontent">
+            <div class="workers" id="wkrs">
+                <img class="workerimg" id="worker0" src="ASSETS/MAN1.png">
+                <h3 class="info" id="if"> IDENTITY<p>Fonts
+                        </br>Colours Graphics</p>
+                </h3>
             </div>
-            <!-- images in main content-->
-            <div class="maincontent">
-                <div class="workers" id="wkrs">
-                <img  class="workerimg" id="worker0" src="ASSETS/MAN1.png"> 
-                <h3 class="info" id="if"> IDENTITY<p>Fonts 
-                </br>Colours Graphics</p></h3>
-                </div>
-                <div class="workers" id="wkrs">
+            <div class="workers" id="wkrs">
                 <img class="workerimg" src="ASSETS/woman1.png">
-                <h3 class="info" id="if">WEB DESIGNER </h3> 
-                </div>
-                <div class="workers" id="wkrs">
+                <h3 class="info" id="if">WEB DESIGNER </h3>
+            </div>
+            <div class="workers" id="wkrs">
                 <img class="workerimg" src="ASSETS/man2.png">
                 <h3 class="info" id="if">DEVELOPMENT </h3>
             </div>
         </div>
-    
-        </main>
-<!-- footer-->
-<footer class="footer"> 
-    <div class="button" id="bnt">
-        <button> Pick a course 
-            <img id="arrow"src="ICONS/arrow-right.svg"> 
-        </button>
-    </div>
 
-    <div class="plataforms" id="plats"> 
-        <div>
-        <p> Ours professionals work at </p>
-    </div>
-        <div>
-        <img src="ASSETS/windows.svg" id="windows">
-        <img src="ASSETS/amazon.svg" id="amazon">
-        <img src="ASSETS/google.svg" id="google">
-    </div>
-</div>
+        <div class="courses">
+            <h1>200+ Courses</h1>
+            <div class="coursepanel">
+                <div class="panel">
+                    <span> WEB DESIGNER </span>
+                    <p>Build professional websites and stand out in the digital market!</p>
+                    <img src="./ASSETS/course1.png" alt="">
+                </div>
 
-</footer>
+                <div class="panel">
+                    <span> DATA SCIENCE</span>
+                    <p>you’ll learn step by step how to collect, clean, analyze, and visualize data using modern tools and technique</p>
+                    <img src="./ASSETS/course2.png" alt="">
+                </div>
+
+                <div class="panel">
+                    <span> UI/UX Design </span>
+                    <p>you’ll learn how to combine creativity and usability to create digital products that people love</p>
+                    <img src="./ASSETS/course3.png" alt="">
+                </div>
+                <div class="panel">
+                    <span> Cloud Security </span>
+                    <p>Become a cloud security expert, from technical operations to strategic leadership</p>
+                    <img src="./ASSETS/course4.png" alt="">
+                </div>                
+            </div>
+        </div>
+
+                        <div class="user">
+                    <h1> Top Rated Product </h1>
+                    <div class="userpic">
+                        <img src="./ASSETS/user1.png" alt="">
+                        <img src="./ASSETS/user2.png" alt="">
+                        <img src="./ASSETS/user3.png" alt="">
+                        <img src="./ASSETS/user4.png" alt="">
+                        <img src="./ASSETS/user5.png" alt="">
+                        <img src="./ASSETS/user6.png" alt="">
+                
+                    </div>
+                    <span>Over 2,000 Users</span>
+                </div>
+
+    </main>
+    <!-- footer-->
+    <footer class="footer">
+        <div class="button" id="bnt">
+            <button> Pick a course
+                <img id="arrow" src="ICONS/arrow-right.svg">
+            </button>
+        </div>
+
+        <div class="plataforms" id="plats">
+            <div>
+                <p> Ours professionals work at </p>
+            </div>
+            <div>
+                <img src="ASSETS/windows.svg" id="windows">
+                <img src="ASSETS/amazon.svg" id="amazon">
+                <img src="ASSETS/google.svg" id="google">
+            </div>
+        </div>
+
+    </footer>
 </body>
+
 </html>
