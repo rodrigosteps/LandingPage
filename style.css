@@ -18,9 +18,14 @@
 
 /* body style*/
 body {
-
-background: #463ea3;
-background: radial-gradient(circle,rgb(12, 4, 101) 1%, rgba(21, 5, 74, 1) 39%, rgba(0, 0, 0, 1) 69%);}
+  background: #463ea3;
+  background: radial-gradient(
+    circle,
+    rgb(12, 4, 101) 1%,
+    rgba(21, 5, 74, 1) 39%,
+    rgba(0, 0, 0, 1) 69%
+  );
+}
 
 /*navigation style */
 .navigation {
@@ -43,9 +48,16 @@ background: radial-gradient(circle,rgb(12, 4, 101) 1%, rgba(21, 5, 74, 1) 39%, r
   align-items: center;
   justify-content: center;
   font-size: 1.4em;
-
   gap: 1em;
 }
+
+a:hover{
+  cursor: pointer;
+scale: 1.1;
+border-bottom: 2px solid #fafafa;
+transition: 0.1s ease-in-out;
+}
+
 
 /*main text */
 .banner {
@@ -130,17 +142,17 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 80%;
-  height: 400px;
-  margin: 4em auto;
-  background-color: none;
+  width: 100%;
+  height: 40%;
+  padding: 2em 8em;
+  margin: 0 auto;
 
   h1 {
     font-size: 6em;
     width: 100%;
     margin-top: 0.5em;
     padding: 0;
-      font-weight: 360;
+    font-weight: 360;
   }
 }
 .coursepanel img {
@@ -151,27 +163,22 @@ h2 {
   flex-direction: row;
   justify-content: space-around;
   gap: 1em;
-  
 
   .panel {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 30%;
-    padding: 2em;
+    padding: 1em 0;
     margin: 2em 0;
     border: 1px solid;
     border-radius: 24px;
-    border-bottom-color: #3506b6;
-    border-right-color: #3d04db;
-    border-top-color: #241151;
-    border-left-color: #241151;
     background-color: rgb(0, 20, 20, 80%);
 
     span {
       font-size: 1.5em;
       margin-bottom: 0.8em;
-      font-weight: 400;
+      font-weight: 600;
     }
 
     p {
@@ -181,11 +188,45 @@ h2 {
   }
 }
 
+.user{
+    display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: 2em 8em;
+  margin: 0 auto;
+  
+    h1 {
+    font-size: 6em;
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    padding: 0;
+    font-weight: 360;
+  }
+
+  span{
+    font-size: 2em;
+    margin-top: 1em;
+  }
+}
+
+.userpic img{
+  width: 6em;
+  border-radius: 50%;
+  border: 2px solid #fafafa;
+object-fit: cover;
+aspect-ratio: 3/3;
+margin-left: -20px;
+}
+
+
+
 .footer {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
-  margin: 20% 0 4% 0;
+  margin: 10% 0 4% 0;
 }
 
 button {
@@ -302,14 +343,11 @@ button {
         padding: 0;
       }
     }
-
   }
 
-.courses{
-  display: none;
-}
-
-
+  .courses {
+    display: none;
+  }
 
   .footer {
     display: flex;
