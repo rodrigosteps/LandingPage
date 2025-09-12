@@ -62,6 +62,8 @@ transition: 0.1s ease-in-out;
 /*main text */
 .banner {
   gap: 0;
+  
+
 }
 
 .letters {
@@ -71,34 +73,36 @@ transition: 0.1s ease-in-out;
   margin: 0 auto;
   width: 80%;
   gap: 0px;
+  
+  h1 {
+    grid-column: span 2 / span 1;
+    font-size: 8em;
+    padding: 0.5em 0 0 1em;
+    font-weight: 360;
+    width: 5.5em;
+  }
+  
+  h2 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 8em;
+    padding: 0;
+    font-weight: 360;
+    width: 5.5em;
+  }
+
+     p {
+    font-size: 1.3em;
+    text-align: left;
+    padding-top: 6em;
+    margin-left: 1em;
+    width: 90%;
+    height: 40%;
+  }
 }
 
-h1 {
-  grid-column: span 2 / span 1;
-  font-size: 8em;
-  padding: 0.5em 0 0 1em;
-  font-weight: 360;
-  width: 5.5em;
-}
 
-h2 {
-  grid-column: span 2 / span 2;
-  grid-column-start: 2;
-  grid-row-start: 2;
-  font-size: 8em;
-  padding: 0;
-  font-weight: 360;
-  width: 5.5em;
-}
-
-.banner p {
-  font-size: 1.3em;
-  text-align: left;
-  padding-top: 6em;
-  margin-left: 1em;
-  width: 90%;
-  height: 40%;
-}
 
 /*main images */
 .maincontent {
@@ -111,7 +115,7 @@ h2 {
 
 .workerimg {
   max-width: auto;
-  max-height: 240px;
+  max-height: 220px;
 }
 #worker0 {
   zoom: 126%;
@@ -131,12 +135,13 @@ h2 {
   padding: 8px;
 }
 
-.info p {
-  padding: 10% 0;
+.info li {
+  padding: 6% 0;
   font-size: 20px;
-  margin: 0;
+  margin: 0 1em;
   height: 10px;
 }
+
 
 .courses {
   display: flex;
@@ -148,7 +153,7 @@ h2 {
   margin: 0 auto;
 
   h1 {
-    font-size: 6em;
+    font-size: 5em;
     width: 100%;
     margin-top: 0.5em;
     padding: 0;
@@ -197,7 +202,7 @@ h2 {
   margin: 0 auto;
   
     h1 {
-    font-size: 6em;
+    font-size: 5em;
     width: 100%;
     margin-top: 0.5em;
     margin-bottom: 0.2em;
@@ -219,6 +224,56 @@ object-fit: cover;
 aspect-ratio: 3/3;
 margin-left: -20px;
 }
+
+.coments img{
+  width: 50px;
+  border-radius: 50%;
+}
+
+
+
+  .coments{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    gap: 0.2em;
+
+    h1{
+      text-align: center;
+    font-size: 5em;
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    padding: 0;
+    font-weight: 360;
+    }
+
+.comentsCard{
+   display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+        align-items: center;
+        margin: 0.2em;
+            background-color: #0e0625;
+            border-radius: 8px;
+}
+
+
+
+    span,
+    p{
+      margin: 0.4em;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      border-radius: 4px;
+
+      padding: 0 0.5em;
+    }
+  }
 
 
 
@@ -349,6 +404,14 @@ button {
     display: none;
   }
 
+<<<<<<< Updated upstream
+=======
+  .user{
+    display: none;
+  }
+
+
+>>>>>>> Stashed changes
   .footer {
     display: flex;
     flex-direction: column;
