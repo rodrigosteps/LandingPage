@@ -153,6 +153,8 @@ a:hover {
     font-weight: 360;
   }
 }
+
+/*style Course cards*/
 .coursepanel img {
   width: 120px;
 }
@@ -218,12 +220,13 @@ a:hover {
   margin-left: -20px;
 }
 
-.coments img {
+/*comments style*/
+.comments img {
   width: 50px;
   border-radius: 50%;
 }
 
-.coments {
+.comments {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -308,7 +311,7 @@ button {
   }
 }
 
-/*responsividade para telas menores*/
+/*mobile screen*/
 @media screen and (max-width: 700px) {
   html {
     padding: 0;
@@ -387,15 +390,10 @@ button {
     }
   }
 
-  .courses {
-    display: none;
-  }
-
-.user {
-    display: none;
-  }
-
-  .coments{
+  .courses,
+  .user,
+  .comments
+   {
     display: none;
   }
 
