@@ -18,6 +18,7 @@
 
 /* body style*/
 body {
+  scroll-behavior: smooth;
   background: #463ea3;
   background: radial-gradient(
     circle,
@@ -130,7 +131,7 @@ a:hover {
 }
 
 .info li {
-  padding: 6% 0;
+  padding: 8% 0;
   font-size: 20px;
   margin: 0 1em;
   height: 10px;
@@ -183,7 +184,7 @@ a:hover {
 
     p {
       font-size: 0.9em;
-      padding: 0;
+      padding:0 0.5em;
     }
   }
 }
@@ -245,7 +246,7 @@ a:hover {
     font-weight: 360;
   }
 
-  .comentsCard {
+  .commentsCard {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
